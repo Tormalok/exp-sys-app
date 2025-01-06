@@ -6,7 +6,7 @@
   font-style: normal;
   width: 75%;
   height: auto;
-  margin-top: 190px;
+  margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -33,7 +33,7 @@
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #e4e4e4;
+  /* border: 1px solid #e4e4e4; */
 }
 
 .opt-box-main .opt-item {
@@ -80,5 +80,5 @@
 .opt-box-main .btn:hover {
   background-color: #dcdcdc;
   color: #000;
-  border: 1px solid #1d1d1f;
+  /* border: 1px solid #1d1d1f; */
 }
