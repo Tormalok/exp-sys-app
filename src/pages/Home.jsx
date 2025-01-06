@@ -3,6 +3,7 @@ import './css/Home.css';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
 import Option from '../components/Option';
+import Submit from '../components/Submit';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Profile />
       <Option />
+      <Submit />
     </div>
   );
 };
