@@ -23,12 +23,15 @@ const Option = () => {
   const [selectedConditions, setSelectedConditions] = useState([]);
 
   const handleOptionClick = (condition) => {
-    setSelectedConditions(
-      (prev) =>
-        prev.includes(condition)
-          ? prev.filter((item) => item !== condition) // Remove if already selected
-          : [...prev, condition] // Add if not selected
+    setSelectedConditions((prev) =>
+      prev.includes(condition)
+        ? prev.filter((item) => item !== condition)
+        : [...prev, condition]
     );
+  };
+
+  const handleClear = () => {
+    setSelectedConditions([]);
   };
 
   return (
@@ -47,7 +50,7 @@ const Option = () => {
           </div>
         ))}
       </div>
-      <div className='btn'>
+      <div className='btn' onClick={handleClear}>
         <div className='btn-text'>Clear</div>
       </div>
     </div>
