@@ -1,5 +1,7 @@
 import React from 'react';
 import './css/ResBox.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const ResBox = () => {
   return (
@@ -7,7 +9,9 @@ const ResBox = () => {
       <div className='inner-box'>
         <h1 className='rsb-title'>Response</h1>
         <div className='rsb-main'></div>
-        <div className='btn'></div>
+        <button className='btn'>
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
       </div>
     </div>
   );
