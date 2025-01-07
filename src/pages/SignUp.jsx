@@ -20,7 +20,7 @@ const SignUp = () => {
             type='text'
             id='username'
             name='username'
-            placeholder='Choose a username*'
+            placeholder='Enter a username*'
             required
           />
 
