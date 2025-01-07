@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sgn-up-bg {
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sgn-up-bg .sgn-up-box {
+  width: 350px;
+  text-align: center;
+}
+
+.sgn-up-box h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.sgn-up-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sgn-up-box input {
+  color: #1d1d1d;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  height: 50px;
+}
+
+.sgn-up-box input:focus {
+  border: 1px solid #1a1a1a;
+}
+
+.sgn-up-box button {
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.sgn-up-box button:hover {
+  background-color: #333333;
+  border: 1px solid #1a1a1a;
+  color: #fff;
+}
+
+.sgn-up-box .alt {
+  font-family: 'Roboto', serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sgn-up-box .alt a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+.sgn-up-box .alt a:hover {
+  border: none;
+}
