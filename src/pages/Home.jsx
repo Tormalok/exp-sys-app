@@ -25,7 +25,7 @@ const Home = () => {
         <Option />
         <Submit onClick={handleSubmitClick} />
       </div>
-      {isResBoxVisible && <ResBox onClose={handleCloseClick} />}
+      <ResBox isVisible={isResBoxVisible} onClose={handleCloseClick} />
     </div>
   );
 };

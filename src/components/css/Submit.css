@@ -15,15 +15,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-}
-
-a {
-  text-decoration: none;
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
-  color: #1d1d1d;
-  background-color: #fff;
-  border: 1px solid #1d1d1d;
+.sbm-btn:hover {
+  background-color: #333333;
+  border: 1px solid #1a1a1a;
+  color: #fff;
 }
