@@ -6,7 +6,7 @@ const Profile = () => {
     <div className='profile'>
       <div className='profile-img'></div>
       <div className='message'>
-        <h1>Hello!</h1>
+        <h1>Hello, have a go...</h1>
       </div>
     </div>
   );
