@@ -1,11 +1,11 @@
 import React from 'react';
 import './css/Submit.css';
 
-const Submit = () => {
+const Submit = ({ onClick }) => {
   return (
-    <a href='#' className='sbm-btn'>
-      <div>Submit</div>
-    </a>
+    <button className='sbm-btn' onClick={onClick}>
+      Submit
+    </button>
   );
 };
 

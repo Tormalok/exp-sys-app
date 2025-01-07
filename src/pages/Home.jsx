@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Home.css';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
@@ -7,15 +7,25 @@ import Submit from '../components/Submit';
 import ResBox from '../components/ResBox';
 
 const Home = () => {
+  const [isResBoxVisible, setResBoxVisible] = useState(false);
+
+  const handleSubmitClick = () => {
+    setResBoxVisible(true);
+  };
+
+  const handleCloseClick = () => {
+    setResBoxVisible(false);
+  };
+
   return (
     <div className='bg-home'>
       <Header />
       <div className='content'>
         <Profile />
         <Option />
-        <Submit />
+        <Submit onClick={handleSubmitClick} />
       </div>
-      <ResBox />
+      {isResBoxVisible && <ResBox onClose={handleCloseClick} />}
     </div>
   );
 };
