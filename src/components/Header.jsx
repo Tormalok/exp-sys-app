@@ -5,12 +5,16 @@ import './css/Header.css';
 const Header = () => {
   return (
     <div className='title-bar'>
-      <div className='title'>
-        <Link to='/'>Exp_App</Link>
+      <div className='container'>
+        <div className='title'>
+          <Link to='/'>
+            <h1>CDD Exp System</h1>
+          </Link>
+        </div>
+        <Link className='btn' to='/signin'>
+          <div>Sign In</div>
+        </Link>
       </div>
-      <Link className='btn' to='/signin'>
-        <div>Sign In</div>
-      </Link>
     </div>
   );
 };
